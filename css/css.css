@@ -1,10 +1,26 @@
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 200;
+	src: local('Source Sans Pro ExtraLight'), local('SourceSansPro-ExtraLight'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGCVh0V6fR69OLaFLklYbiSk.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://fonts.gstatic.com/s/sourcesanspro/v9/ODelI1aHBYDBqgeIAH2zlNV_2ngZ8dMf8fLgjYEouxg.woff2) format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
 	overflow-x: scroll;
 	overflow-y: hidden;
 	white-space: nowrap;
-	overflow-y: hidden;
+	font-family: 'Source Sans Pro';
 }
 
 .section {
@@ -14,6 +30,41 @@ body {
 	height: 100vh;
 	width: calc(100vw - 4px);
 	display: inline-block;
-	background-color: lightblue;
 	border: 2px solid #000;
+}
+
+header {
+	height: 20vh;
+	width: 100vw;
+}
+
+.c100 {
+	width: 100vw;
+	height: 10vh;
+}
+
+.c50 {
+	width: 50vw;
+	display: inline-block;
+	height: 60vh;
+	vertical-align: text-top;
+	background-color: green;
+}
+
+h1 {
+	margin: 0px;
+	font-size: 15vh;
+	font-weight: 200;
+}
+
+.photo {
+	padding: 5px;
+}
+
+.photo img {
+	max-width: 75%;
+}
+
+.photo img:nth-child(2) {
+	margin: 50px;
 }
