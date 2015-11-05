@@ -22,4 +22,10 @@ $('.section').each(function(s) {
 		var num = Math.floor(Math.random() * 6)
 		$(this).children().css("background-color", colours[num])
 	}
+
+})
+
+$('.photo').children().on('click', function() {
+	$('img').animate({ "top": "-=50px", "left": "-=50px" }, "slow");
+	$('img:first').fadeTo("slow", 0).insertAfter('img:last');
 })
