@@ -17,10 +17,11 @@ $('.photo').each(function() {
 })
 
 $('.section').each(function(s) {
-	var colours =['#b8fffa', '#FFFEB8', '#B8FFC0', '#FFB8F7', '#B8C0FF']
-	for(i = -1; i < s; i++) {
-		var num = Math.floor(Math.random() * 6)
-		$(this).children().css("background-color", colours[num])
+	var colours =['#B8fffA', '#FFFEB8', '#B8FFC0', '#FFB8F7', '#B8C0FF', '#FF00F5', '#FF8787', '#002DFF']
+	for(i = -2; i < s; i++) {
+		var num1 = Math.floor(Math.random() * 9);
+		var num2 = Math.floor(Math.random() * 9);
+		$(this).css("background", "linear-gradient(" + colours[num1] + "," + colours[num2])
 	}
 
 })
